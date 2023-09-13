@@ -47,6 +47,11 @@ export const quotes = [
         name:"If it works dont touch it",
         by:"4232"
     },
+    {
+        name:"Check Purpose",
+        by:"4232"
+    },
+
 
 ] 
 
