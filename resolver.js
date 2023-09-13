@@ -13,7 +13,7 @@ const resolvers = {
     },
 
     Mutation:{
-        signupUserDummy(_,{userNew}){
+        signupUser(_,{userNew}){
             const id = randomBytes(5).toString("hex")
             users.push({id, ...userNew})
             return users.find(user=>user.id == id)

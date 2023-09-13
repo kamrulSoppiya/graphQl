@@ -1,5 +1,6 @@
 // User = type User
-import {gql} from 'apollo-server'
+import {gql} from 'apollo-server';
+
 const typeDefs = gql`
    type Query{
         users:[User]
@@ -23,8 +24,7 @@ const typeDefs = gql`
    }
 
    type Mutation{
-    signupUserDummy(userNew:UserInput!):User
-
+    signupUser(userNew:UserInput!):User
    }
 
    input UserInput{

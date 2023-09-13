@@ -5,24 +5,17 @@
 */
 export const users = [
     {
-        id:"23131",
+        _id:"23131",
         firstName:"mukesh",
         lastName:"kumar",
         email:"mukesh@mukeshkumar.com",
         password:"12345"
     },
     {
-        id:"4232",
+        _id:"4232",
         firstName:"suresh",
         lastName:"sharma",
         email:"suresh@sureshsharma.com",
-        password:"12346"
-    },
-    {
-        id:"4233",
-        firstName:"rakesh",
-        lastName:"verma",
-        email:"rakesh@rakeshverma.com",
         password:"12346"
     },
 ]
@@ -47,45 +40,5 @@ export const quotes = [
         name:"If it works dont touch it",
         by:"4232"
     },
-    {
-        name:"Check Purpose",
-        by:"4232"
-    },
-
 
 ] 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
