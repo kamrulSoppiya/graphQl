@@ -6,6 +6,7 @@ const typeDefs = gql`
    type Query{
        users:[User]
        quotes:[Quote]
+       
    }
 
    type User{
@@ -14,7 +15,7 @@ const typeDefs = gql`
         lastName: String
         email: String
         password: String
-        quotes:[]
+        quotes:[Quote]
    }
 
    type Quote{
@@ -27,6 +28,9 @@ const resolvers = {
     Query:{
         users:()=>users,
         quotes:()=>quotes
+    },
+    User:{
+        quotes:(ur)=>quotes.filter(quote=>quote.by == ur.id)
     }
 }
 
